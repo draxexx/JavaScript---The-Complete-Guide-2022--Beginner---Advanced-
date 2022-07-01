@@ -71,3 +71,17 @@ typeof variable;
 // ' != ' : check for value inequality
 // ' === and !== ' check for value AND type (in)equality
 ```
+
+> We didn't assigned name attackMonsterHandler, because this function will not be attached to any event handler
+
+```js
+function attackMonster() {}
+```
+
+> Getting Input value by using Prompt
+
+```js
+// first parameter is the text of the input dialog
+// second parameter is the initial value of the input dialog
+prompt("Maximum life for you and the monster", "100");
+```

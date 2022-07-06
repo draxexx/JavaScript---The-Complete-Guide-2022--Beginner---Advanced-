@@ -85,3 +85,53 @@ function attackMonster() {}
 // second parameter is the initial value of the input dialog
 prompt("Maximum life for you and the monster", "100");
 ```
+
+> Ternary operator
+
+```js
+const userName = isLogin ? "Max" : null;
+```
+
+> Boolean tricks with logical operators
+
+```js
+const isLogin = true;
+!!isLogin; // returns true
+
+// default value assignment via OR operator
+const name = someInput || "Max"; // if someInput is null 'false', then other condition will be assigned
+
+// use value if condition is true via AND operator
+const name = isLoggedIn && "Max"; // if isLoggedIn true then "Max" will be assigned
+```
+
+> Loops
+
+```js
+// for loop
+// execute code a certain amount of times (with counter variable)
+
+for (let i = 0; i < 3; i++) {
+  console.log(i);
+}
+
+// for-of loop
+// execute for every element in an array
+
+for (const el of array) {
+  console.log(el);
+}
+
+// for-in loop
+// execute for every key in an object
+
+for (const key in obj) {
+  console.log(key);
+  console.log(obj[key]);
+}
+
+// while loop
+// execute code as long as a condition is true
+
+while (isLoggedIn) {}
+```

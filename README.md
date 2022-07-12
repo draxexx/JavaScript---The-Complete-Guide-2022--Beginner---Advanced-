@@ -135,3 +135,42 @@ for (const key in obj) {
 
 while (isLoggedIn) {}
 ```
+
+## SECTION 7 - DOM
+
+> Selecting Elements in DOM
+
+```js
+document.getElementById(""); // gets element by id
+document.getElementsByClassName(""); // gets elements by class name
+document.querySelector(".list-item"); // gets first matched item
+document.querySelectorAll(".list-item"); // gets all matched items
+```
+
+> Modifying Selected Elements
+
+```js
+// select first matches HTML element
+const h1 = document.querySelector("h1");
+// print it's content
+console.log(h1.textContent);
+// assign new variable
+h1.textContent = "New text content";
+// style h1 element
+h1.style.color = "red";
+```
+
+> Children, Descendants, Parent & Ancestors
+
+1. 'p' is a child of 'div'. 'em' isn't
+2. 'p' is a descendant of 'div'. So is 'em'
+3. 'div' is a parent of 'p', but not of 'em'
+4. 'div' is an ancestor of 'p' and of 'em'
+
+```HTML
+<div>
+  <p>
+    A <em>test!</em>
+  </p>
+</div>
+```
